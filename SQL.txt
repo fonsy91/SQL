@@ -1,4 +1,4 @@
-TEORIA SQL (shell MySQL)
+TEORIA SQL (shell MySQL) para windows
 
 -\sql:Camniamos de formato de JS a SQL 
 -\connect root@localhost: Para conetcarnos al root 

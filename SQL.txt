@@ -1,0 +1,13 @@
+TEORIA SQL (shell MySQL)
+
+-\sql:Camniamos de formato de JS a SQL 
+-\connect root@localhost: Para conetcarnos al root 
+
+-Creacción de una bsase de datos:  
+-Cambiarse a una base de datos: USE <nombre_base_datos>;
+-Mostrar todas las tablas de una base de datos: SHOW FULL TABLES FROM <base_datos>
+-Mostrar el contenido de una tabla: SELECT * FROM <nombre_tabla>
+-Mostrar el contenido de una tabla hasta un registro en concreto: SELECT * FROM <nombre_tabla> LIMIT x,y
+	x: desde donde comienza 0(primera fila)
+	y: hasta donde quieres que muestre 
+-Mostrar las columnas de una tabla: SHOW COLUMNS FROM <nombre_tabla>

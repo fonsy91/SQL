@@ -10,4 +10,4 @@ TEORIA SQL (shell MySQL) en windows
 -Mostrar el contenido de una tabla hasta un registro en concreto: SELECT * FROM <nombre_tabla> LIMIT x,y
 	x: desde donde comienza 0(primera fila)
 	y: hasta donde quieres que muestre 
--Mostrar las columnas de una tabla: SHOW COLUMNS FROM <nombre_tabla>
+-Mostrar las columnas de una tabla: SHOW COLUMNS FROM <nombre_tabla> o DESCRIBE <nombre_tabla>

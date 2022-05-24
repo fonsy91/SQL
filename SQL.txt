@@ -3,7 +3,7 @@ TEORIA SQL (shell MySQL) en windows
 -\sql:Camniamos de formato de JS a SQL 
 -\connect root@localhost: Para conetcarnos al root 
 
--Creacción de una bsase de datos:  
+-Creacción de una base de datos:  
 -Cambiarse a una base de datos: USE <nombre_base_datos>;
 -Mostrar todas las tablas de una base de datos: SHOW FULL TABLES FROM <base_datos>
 -Mostrar el contenido de una tabla: SELECT * FROM <nombre_tabla>

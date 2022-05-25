@@ -21,3 +21,5 @@ mientras no estes usando el (*)
 		SELECT * FROM countrylanguage WHERE Language='Spanish' AND Percentage>90;
 	Las conidciones pueden ser: =,!=,>,<,>=,<=
 
+-Para ordenar los resultados de las consultas: SELECT * FROM <nombre_tabla> ORDER BY <columna>
+	-SELECT * FROM countrylanguage ORDER BY Percentage;

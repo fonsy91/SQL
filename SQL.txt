@@ -3,11 +3,21 @@ TEORIA SQL (shell MySQL) en windows
 -\sql:Camniamos de formato de JS a SQL 
 -\connect root@localhost: Para conetcarnos al root 
 
--Creacción de una bsase de datos:  
+-Creacción de una bsase de datos:  create database <nombre_base_datos>
 -Cambiarse a una base de datos: USE <nombre_base_datos>;
--Mostrar todas las tablas de una base de datos: SHOW FULL TABLES FROM <base_datos>
+
+-TABLAS
+-Mostrar todas las tablas de una base de datos: SHOW FULL TABLES FROM <base_datos> o  show tables
 -Mostrar el contenido de una tabla: SELECT * FROM <nombre_tabla>
 -Mostrar el contenido de una tabla hasta un registro en concreto: SELECT * FROM <nombre_tabla> LIMIT x,y
 	x: desde donde comienza 0(primera fila)
 	y: hasta donde quieres que muestre 
 -Mostrar las columnas de una tabla: SHOW COLUMNS FROM <nombre_tabla> o DESCRIBE <nombre_tabla>
+-Buscar una fila o filas de una tabla: SELECT columna1, columna2... FROM tabla1, tabla2... WHERE condicion
+mientras no estes usando el (*)
+	Ejemplo: 
+		SELECT Percentage FROM countrylanguage WHERE Percentage=5.3;
+		SELECT * FROM countrylanguage WHERE CountryCode='ABW';
+		SELECT * FROM countrylanguage WHERE Language='Spanish' AND Percentage>90;
+	Las conidciones pueden ser: =,!=,>,<,>=,<=
+

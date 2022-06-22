@@ -1,6 +1,6 @@
 TEORIA SQL (shell MySQL) en windows
 
--\sql:Camniamos de formato de JS a SQL 
+-\sql:Cambiamos de formato de JS a SQL 
 -\connect root@localhost: Para conetcarnos al root 
 
 -Creacción de una bsase de datos:  create database <nombre_base_datos>

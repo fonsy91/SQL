@@ -9,6 +9,7 @@ TEORIA SQL (shell MySQL) en windows
 -TABLAS
 -Mostrar todas las tablas de una base de datos: SHOW FULL TABLES FROM <base_datos> o  show tables
 -Mostrar el contenido de una tabla: SELECT * FROM <nombre_tabla>
+-Mostrar el contenido de una tabla: DESCRIBE <nombre_tabla>
 -Mostrar el contenido de una tabla hasta un registro en concreto: SELECT * FROM <nombre_tabla> LIMIT x,y
 	x: desde donde comienza 0(primera fila)
 	y: hasta donde quieres que muestre 
@@ -23,3 +24,9 @@ mientras no estes usando el (*)
 
 -Para ordenar los resultados de las consultas: SELECT * FROM <nombre_tabla> ORDER BY <columna>
 	-SELECT * FROM countrylanguage ORDER BY Percentage;
+-Cambiar el valor de un campo de una tabla: 
+	-UPDATE <nombre_tabala> SET <nombre_columna>=REPLACE(<nombre_columna>,"<antiguo_valor>","<nuevo_valor>");
+	Ejemplo: UPDATE DATOSPERSONALES SET NOMBRE=REPLACE(NOMBRE,"ALFONSO","Alfonso");
+-Insertar datos en una tabla:
+	-INSERT INTO <nombre_tabla>(`NIF`, `NOMBRE`, `APELLIDO`, `EDAD`) VALUES ('53792134K','Pedro','Sanz',44)
+	Ejemplo: INSERT INTO `datospersonales`(`NIF`, `NOMBRE`, `APELLIDO`, `EDAD`) VALUES ('53792134K','Pedro','Sanz',44);

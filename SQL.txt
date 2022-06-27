@@ -1,6 +1,6 @@
 TEORIA SQL (shell MySQL) en windows
 
--\sql:Camniamos de formato de JS a SQL 
+-\sql:Cambiamos de formato de JS a SQL 
 -\connect root@localhost: Para conetcarnos al root 
 
 -Creacción de una bsase de datos:  create database <nombre_base_datos>
@@ -9,10 +9,14 @@ TEORIA SQL (shell MySQL) en windows
 -TABLAS
 -Mostrar todas las tablas de una base de datos: SHOW FULL TABLES FROM <base_datos> o  show tables
 -Mostrar el contenido de una tabla: SELECT * FROM <nombre_tabla>
+-Mostrar el contenido de una tabla: DESCRIBE <nombre_tabla>
 -Mostrar el contenido de una tabla hasta un registro en concreto: SELECT * FROM <nombre_tabla> LIMIT x,y
 	x: desde donde comienza 0(primera fila)
 	y: hasta donde quieres que muestre 
 -Mostrar las columnas de una tabla: SHOW COLUMNS FROM <nombre_tabla> o DESCRIBE <nombre_tabla>
+-Mostrar las filas de una tabla con un patro de palabra\s devolviendo en este caso todas las filas que contengan la palabra caballero y con 
+	el porcentaje indicamos que hay palabras detras es un simbolo comodin: 
+	-SELECT * FROM ARTÍCULOS WHERE NOMBREARTICULO LIKE '%CABALLERO';
 -Buscar una fila o filas de una tabla: SELECT columna1, columna2... FROM tabla1, tabla2... WHERE condicion
 mientras no estes usando el (*)
 	Ejemplo: 
@@ -23,4 +27,12 @@ mientras no estes usando el (*)
 
 -Para ordenar los resultados de las consultas: SELECT * FROM <nombre_tabla> ORDER BY <columna>
 	-SELECT * FROM countrylanguage ORDER BY Percentage;
+
 Para ordenar los resultados de forma invertida: SELECT * FROM <nombre_tabla> ORDER BY <columna> DESC
+-Cambiar el valor de un campo de una tabla: 
+	-UPDATE <nombre_tabala> SET <nombre_columna>=REPLACE(<nombre_columna>,"<antiguo_valor>","<nuevo_valor>");
+	Ejemplo: UPDATE DATOSPERSONALES SET NOMBRE=REPLACE(NOMBRE,"ALFONSO","Alfonso");
+-Insertar datos en una tabla:
+	-INSERT INTO <nombre_tabla>(`NIF`, `NOMBRE`, `APELLIDO`, `EDAD`) VALUES ('53792134K','Pedro','Sanz',44)
+	Ejemplo: INSERT INTO `datospersonales`(`NIF`, `NOMBRE`, `APELLIDO`, `EDAD`) VALUES ('53792134K','Pedro','Sanz',44);
+

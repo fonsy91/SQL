@@ -14,6 +14,9 @@ TEORIA SQL (shell MySQL) en windows
 	x: desde donde comienza 0(primera fila)
 	y: hasta donde quieres que muestre 
 -Mostrar las columnas de una tabla: SHOW COLUMNS FROM <nombre_tabla> o DESCRIBE <nombre_tabla>
+-Mostrar las filas de una tabla con un patro de palabra\s devolviendo en este caso todas las filas que contengan la palabra caballero y con 
+	el porcentaje indicamos que hay palabras detras es un simbolo comodin: 
+	-SELECT * FROM ARTÍCULOS WHERE NOMBREARTICULO LIKE '%CABALLERO';
 -Buscar una fila o filas de una tabla: SELECT columna1, columna2... FROM tabla1, tabla2... WHERE condicion
 mientras no estes usando el (*)
 	Ejemplo: 
@@ -30,3 +33,4 @@ mientras no estes usando el (*)
 -Insertar datos en una tabla:
 	-INSERT INTO <nombre_tabla>(`NIF`, `NOMBRE`, `APELLIDO`, `EDAD`) VALUES ('53792134K','Pedro','Sanz',44)
 	Ejemplo: INSERT INTO `datospersonales`(`NIF`, `NOMBRE`, `APELLIDO`, `EDAD`) VALUES ('53792134K','Pedro','Sanz',44);
+
